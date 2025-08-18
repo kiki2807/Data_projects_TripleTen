@@ -1,0 +1,41 @@
+# 🚕 Chicago Taxi Data Analysis
+
+This project explores ride activity and performance of taxi companies in Chicago. Using SQL-based data analysis, it evaluates company market share, neighborhood demand, and key patterns in ride distribution.
+
+## 📝 Project Description
+
+The goal of this project was to uncover insights from a dataset containing taxi rides in Chicago. After importing and cleaning the data, we examined:
+
+- Company performance based on total trips
+- Neighborhoods with the highest ride volume
+- Average ride trends per company
+- Hypothesis testing around ride distribution
+
+This analysis helped identify top-performing taxi providers and high-demand areas, with a focus on actionable insights for business strategy.
+
+## 🔍 Key Findings
+
+- **Flash Cab** leads significantly in total rides, followed by **Taxi Affiliation Services**.
+- **Downtown neighborhoods**—Loop and River North—consistently have the highest demand.
+- Data was clean with no duplicates or nulls, and minimal preprocessing was required.
+- Converting float values to integers improved readability in summary tables.
+
+## 🛠 Tools & Technologies
+
+- **SQL** (via PostgreSQL-style queries)
+- **Python**: Pandas, NumPy
+- **Data Visualization**: Matplotlib, Seaborn
+- **Jupyter Notebook**
+
+
+## ⚙️ Setup Instructions
+
+To run this notebook:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/kiki2807/Data_projects_TripleTen
+    ```
+2. Open `Project Sprint 6 SQL.ipynb` in Jupyter Notebook or Google Colab.
+3. Follow the instructions in the notebook to run the analysis.
+
