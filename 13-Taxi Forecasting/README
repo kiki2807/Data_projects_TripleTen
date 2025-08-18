@@ -1,0 +1,38 @@
+# 🚖 Taxi Demand Forecasting
+
+This project focuses on building predictive models to forecast hourly taxi demand in a major city. By analyzing time series data and applying machine learning models, the goal is to help optimize driver dispatching and improve customer wait times.
+
+## 📝 Project Description
+
+Accurately forecasting taxi demand helps ride-hailing companies align driver supply with passenger needs. In this project, we use historical trip data to train models that predict the number of ride orders for future hours.
+
+The notebook includes:
+- Data preprocessing and timestamp parsing
+- Feature engineering (lag features, rolling averages, and day-of-week indicators)
+- Model training and evaluation using multiple approaches
+- Final performance comparison on a holdout test set
+
+## 🔍 Key Findings
+
+- **LightGBM** consistently delivered the best balance between performance and speed.
+- Including **lag features (1h, 24h)** and **rolling means (1h, 6h, 24h)** significantly boosted predictive accuracy.
+- Time-based cross-validation helped avoid data leakage and overfitting.
+- Model tuning and proper validation set usage were critical for real-world reliability.
+
+## 🛠 Tools & Technologies
+
+- **Python**: pandas, NumPy, datetime
+- **Feature Engineering**: lag features, rolling averages
+- **Machine Learning**: Linear Regression, Decision Tree, LightGBM
+- **Visualization**: matplotlib, seaborn
+
+
+## ⚙️ Setup Instructions
+
+To run this notebook:
+
+```bash
+git clone https://github.com/kiki2807/Data_projects_TripleTen
+cd sprint13-taxi-demand
+pip install -r requirements.txt
+jupyter notebook "Sprint 13 project.ipynb"
